@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divorce Clicker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Divorce Clicker</h1>
+  </header>
+  <main>
+    <section id="papers-section" class="game-section">
+      <h2>Papers</h2>
+      <div class="info-container">
+        <p class="paper-info">You have <span id="numb-papers">0.00</span> papers.</p>
+        <button id="paper-button" class="click-button">Click Me!</button>
+        <audio id="click-sound">
+          <source src="Audio/Clicking.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section>
+
+    <section id="lawyer-section-1" class="game-section">
+      <h2>Lawyer Tier 1</h2>
+      <div class="info-container">
+        <p class="lawyer-info">You have <span id="numb-lawyers-1">0</span> Lawyer Tier 1.</p>
+        <p class="papers-per-sec">You earn <span id="papers-per-second-1">0.00</span> papers per second all together.</p>
+        <button id="lawyer-1-button" class="buy-button">Buy Lawyer Tier 1 - 10 Papers</button>
+      </div>
+    </section>
+
+    <section id="lawyer-section-2" class="game-section">
+      <h2>Lawyer Tier 2</h2>
+      <div class="info-container">
+        <p class="lawyer-info">You have <span id="numb-lawyers-2">0</span> Lawyer Tier 2.</p>
+        <p class="papers-per-sec">You earn <span id="papers-per-second-2">0.00</span> papers per second all together.</p>
+        <button id="lawyer-2-button" class="buy-button">Buy Lawyer Tier 2 - 750 Papers</button>
+      </div>
+    </section>
+
+    <section id="updates-section" class="game-section">
+      <h2>Updates</h2>
+      <ul id="updates-list" class="update-list">
+        <li>------- Version 0.0.3 - May 14, 2024</li>
+        <li>Update 1: All past features from the last game added to new game - May 14, 2024</li>
+        <li>Update 1: New style - May 14, 2024</li>
+        <li>Update 1: Prestige shop actually works!! - May 14, 2024</li>
+        <li>----Later Updates----</li>
+        <li>Update 2: Honestly dont know what to do for update 2 - May 27, 2024</li>
+      </ul>
+    </section>
+
+    <section id="prestige-section" class="game-section">
+      <h2>Prestige</h2>
+      <p class="prestige-info">You can prestige once you have:</p>
+      <ul class="prestige-list">
+        <li>20 Lawyer Tier 1's</li>
+        <li>20 Lawyer Tier 2's</li>
+        <li>$50,000</li>
+      </ul>
+      <button id="prestige-button" class="prestige-button">Prestige</button>
+      <p class="prestige-points-info">Current Prestige Points: <span id="prestige-points">0</span></p>
+      <h3 class="permanent-upgrades">Permanent Upgrades</h3>
+      <ul id="permanent-upgrades-list" class="permanent-upgrades-list">
+        <!-- Permanent upgrades will be added here dynamically -->
+      </ul>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
