@@ -61,11 +61,11 @@ function buyLawyer(tier) {
 
 function generatePapersPerSecond() {
   setInterval(function () {
-    updatePapers(numLawyers * 0.25); 
-  }, 1000);
+    updatePapers(numLawyers * 0.25 + numLawyersTier2 * 2); // add the paper generation per tick
+  }, 1000); // updated interval to 250 milliseconds
 }
 
-// listener events
+// Listener events
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("paper-button").addEventListener("click", function () {
     updatePapers(1);
@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
     buyLawyer(2);
   });
 
-  // call function to generate paper for tier 1
+  // Generate papers per second
   generatePapersPerSecond();
 });
+

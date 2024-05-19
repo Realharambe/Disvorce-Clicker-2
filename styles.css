@@ -135,3 +135,37 @@ nav ul li a {
 nav ul li.selected {
   font-size: 2.5em; /* Increase font size for the selected item */
 }
+
+/* Command Console styles */
+.command-console {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  display: none;
+}
+
+.command-console input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+}
+
+.command-console button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.command-console button:hover {
+  background-color: #2980b9;
+}
