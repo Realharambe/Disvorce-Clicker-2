@@ -32,7 +32,7 @@ function updatePPS() {
 function formatDecimals(value) {
   return (Math.round(value * 4) / 4).toFixed(2); // ensures increments of 0.25
 }
-
+//what happened?
 function buyLawyer(tier) {
   let cost;
   if (tier === 1) {
