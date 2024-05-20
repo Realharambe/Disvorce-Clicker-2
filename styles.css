@@ -27,10 +27,10 @@ main {
 
 .box {
   background-color: #555;
-  padding: 20px;
-  margin: 20px auto;
+  padding: 15px; /* Reduced padding */
+  margin: 15px auto; /* Reduced margin */
   border-radius: 15px;
-  max-width: 600px;
+  max-width: 400px; /* Reduced max-width */
 }
 
 #title-box h1 {
@@ -45,9 +45,10 @@ main {
 .game-section {
   background-color: #555;
   border: 1px solid #666;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 15px; /* Reduced padding */
+  margin-bottom: 15px; /* Reduced margin */
   border-radius: 15px;
+  max-width: 400px; /* Reduced max-width */
 }
 
 .info-container {

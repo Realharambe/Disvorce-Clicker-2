@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-    <h1>Divorce Clicker</h1>
+    <h1>Divorce Clicker 2!!</h1>
   </header>
   <main>
     <section id="papers-section" class="game-section">
@@ -51,6 +51,15 @@
       </ul>
     </section>
 
+    <section id="Patch-notes-section" class="game-section">
+      <h2>Patchs</h2>
+      <ul id="Patch-list" class="update-list">
+        <li>------- Version 0.0.6 - May 19, 2024</li>
+        <li>added more commands - May 19, 2024</li>
+        <li>ability to export and import saves - May 19, 2024</li>
+      </ul>
+    </section>
+
     <section id="prestige-section" class="game-section">
       <h2>Prestige</h2>
       <p class="prestige-info">You can prestige once you have:</p>
@@ -65,6 +74,12 @@
       <ul id="permanent-upgrades-list" class="permanent-upgrades-list">
         <!-- Permanent upgrades will be added here dynamically -->
       </ul>
+      <h3 class="prestige-upgrades">Prestige Upgrades</h3>
+      <div class="prestige-upgrades-container">
+        <button onclick="buyPrestigeUpgrade('clickMultiplier', 1)">Perm x2 Click Me Earnings (1 Point)</button>
+        <button onclick="buyPrestigeUpgrade('lawyerTier1Multiplier', 3)">Perm x2 Lawyer T1 Earnings (3 Points)</button>
+        <button onclick="buyPrestigeUpgrade('lawyerTier2Multiplier', 5)">Perm x2 Lawyer T2 Earnings (5 Points)</button>
+      </div>
     </section>
 
     <!-- Command Console Section -->
@@ -77,5 +92,3 @@
   <script type="text/javascript" src="game.js"></script>
   <script type="text/javascript" src="coms.js"></script>
   <script type="text/javascript" src="save.js"></script>
-</body>
-</html>

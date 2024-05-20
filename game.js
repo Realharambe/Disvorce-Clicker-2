@@ -62,7 +62,7 @@ function buyLawyer(tier) {
 function generatePapersPerSecond() {
   setInterval(function () {
     updatePapers(numLawyers * 0.25 + numLawyersTier2 * 2); // add the paper generation per tick
-  }, 1000); // updated interval to 250 milliseconds
+  }, 1000); // updated interval to 1000 milliseconds
 }
 
 // Listener events
